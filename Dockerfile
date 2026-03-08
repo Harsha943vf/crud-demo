@@ -29,5 +29,5 @@ COPY --from=builder /app/target/crud-demo-0.0.1-SNAPSHOT.jar app.jar
 # Expose port
 EXPOSE 8080
 
-# Run the app
+# Run the app — PORT env var is set by Railway automatically
 ENTRYPOINT ["java", "-jar", "app.jar"]
